@@ -1,4 +1,5 @@
 <h1>Food Search Results for <%= params[:q] %></h1>
+<p>Total Results for <%= params[:q] %>: <%= @search_data %></p>
 
 <% @foods.each do |food| %>
   <p>Description: <%= food.description %></p>
