@@ -26,6 +26,7 @@ RSpec.describe 'Landing page', type: :feature do
           expect(page).to have_css('.description')
           expect(page).to have_css('.brandOwner')
           expect(page).to have_css('.ingredients')
+        end
       end
     end
   end
