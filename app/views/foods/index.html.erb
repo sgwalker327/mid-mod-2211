@@ -1,1 +1,8 @@
 <h1>Food Search Results for <%= params[:q] %></h1>
+
+<% @foods.each do |food| %>
+  <p>Description: <%= food.description %></p>
+  <p>GTIN/UPC Code: <%= food.gtinUpc %></p>
+  <p>Brand Owner: <%= food.brandOwner %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+<% end %>
