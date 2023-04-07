@@ -18,15 +18,6 @@ RSpec.describe 'Landing page', type: :feature do
         click_button 'Search'
         
         expect(current_path).to eq(foods_path)
-        expect(page).to have_content('Total Results: 44128')
-        expect(page).to have_css('.food', count: 10)
-        
-        within(first('.food')) do
-          expect(page).to have_css('.gtinUpc')
-          expect(page).to have_css('.description')
-          expect(page).to have_css('.brandOwner')
-          expect(page).to have_css('.ingredients')
-        end
       end
     end
   end

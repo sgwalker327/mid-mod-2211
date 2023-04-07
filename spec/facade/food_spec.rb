@@ -4,8 +4,9 @@ RSpec.describe FoodFacade do
   describe 'food_search' do
     it 'returns a list of foods that contain the ingredient' do
       food = FoodFacade.new.food_search('sweet potatoes')
-
+      
       expect(food).to be_a(Array)
+      expect(food.count).to eq(50)
     end
   end
 end
